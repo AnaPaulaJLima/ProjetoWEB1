@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculadora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Estilo.css" />
+    <script src="main.js"></script>
+</head>
+<script>
+    function Soma() {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var num2 = parseInt(document.getElementById("num2").value);
+        document.getElementById("inpResult").value = (num1 + num2);
+    }
+
+    function Multiplicacao() {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var num2 = parseInt(document.getElementById("num2").value);
+        document.getElementById("inpResult").value = (num1 * num2);
+    }
+
+    function Subtracao() {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var num2 = parseInt(document.getElementById("num2").value);
+        document.getElementById("inpResult").value = (num1 - num2);
+    }
+
+    function Divisao() {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var num2 = parseInt(document.getElementById("num2").value);
+        document.getElementById("inpResult").value = (num1 / num2);
+    }
+</script>
+
+<body>
+
+    <div class="bgImagem">
+        <div class="bgPrincipalCinza">
+            <br><h1>ATIVIDADE DE JAVASCRIPT</h1><br>
+            <a href="PageCalculadora.html"><button id="btnCalculadora">Calculadora</button></a>
+		    <a href="PageCursos.html"><button id="btnCursos">Cursos</button></a>
+            <a href="PageTabelas.html"><button id="btnTabelas">Tabelas</button></a>
+
+            <div class="bgMeio">
+                <div class="borda">
+                    <br><h3>CALCULADORA</h3>
+                    <div>
+                        <input id="inpResult" type="number" name="resultado" readonly="true" placeholder="RESULTADO"><br>
+                        <input class="inpNum" id="num1" type="number" name="num" placeholder="número 1">
+                        <input class="inpNum" id="num2" type="number" name="num" placeholder="número 2">
+
+                        <div class="botoes">
+                            <button class="btnSoma" id="multiplicacao" onclick="Multiplicacao()">X</button>
+                            <button class="btnSoma" id="subtracao" onclick="Subtracao()">-</button><br> 
+                            <br><button class="btnSoma" id="divisao" onclick="Divisao()">/</button>
+                            <button class="btnSoma" id="soma" onclick="Soma()">+</button>
+                        </div>
+                    </div>
+                    
+                </div>           
+                
+            </div>
+
+            <div id="infoRodape">
+            <br><h2>Sistema desenvolvido por Ana Paula Lima - 2018B</h2><br>
+            </div>
+
+        </div>
+        
+    </div>
+
+</body>
+</html>
